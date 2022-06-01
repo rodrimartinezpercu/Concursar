@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;700&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+    body {font-family: 'League Spartan', sans-serif;   margin: 0%
+      ; background-color:#ffffb7; display: grid;
+    grid-template-rows: auto 1fr auto;grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  }
+    
+      nav{color: rgb(43, 41, 41);}
+
+      fieldset{ margin: 1rem;}
+      
+      main {grid-area: main;}
+
+      h1 {font-weight: 500;}
+
+      /* CAMBIAR ESE HGHT QUE ME VA A COMPLICAR PARA OTROS DISPOSITIVOS*/
+
+
+      .nav__topbar{ display: flex;font-size: 20px; justify-content: space-between; width: 100%; height: 50px; align-items: center ;}
+
+      .nav__topbar__btn{margin: 0px; text-decoration: none; color: antiquewhite ;padding: 15px; display: flex; align-items: center;}
+      
+      .nav__topbar__logo{ width: 100px; padding: 5px;}
+
+      .nav__topbar--noIndex{display: flex;font-size: 20px; justify-content: space-between; width: 100%; height: 50px; align-items: center; }
+
+      .nav__topbar--ulNoIndex{ display: flex; justify-content: center; flex-basis: auto;align-items: baseline;}
+
+      .nav__topbar--listnoIndex { display: flex;
+        padding: 10px;
+        background-color: rgb(68, 71, 75);
+        border-radius: 8%; border-color: black; border: solid; margin-bottom: 0px;
+        position: relative; flex-shrink: auto
+      ;}
+
+      .logobtn{ width: 150px; height: 75px;}
+
+
+      .header__responsive{ display: grid; place-items: center;
+        background-image: url(./assets/OrquestaPng.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom
+      ;
+        height: 65vh;
+        }
+
+      
+
+        .header__responsive--logo{
+          display:grid;
+          align-items: center
+          ; width: 100%;}
+
+
+
+      .header__nav__ul{display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;}
+    
+      .header__nav__list{display: flex; justify-content: center;flex-direction: row; list-style: none
+                        ; padding: 10px;
+                        background-color: rgb(68, 71, 75);
+                        border-radius: 8%;
+                        bottom: 24px; border-color: black; border: solid; margin-bottom: 0px;
+                        position: relative; bottom:24px ;}
+      .header__nav__a{text-decoration: none;color: antiquewhite;}   
+
+      .header__fotologo{ width: 100%;
+        height: 400px;}
+        
+        header{background-color: rgb(27, 25, 25);margin-bottom: 0px; grid-area: header;}            
+
+      .main__index{display: flex; flex-direction: column; justify-content: center; align-items: center; column-gap: 10px;
+      grid-area: main;}
+      
+        .main__padding{ padding: 3rem;}
+
+      main img {width: 50px; height: 50px;}
+    
+      .main__descripcion{text-align: center; padding: 1rem;}
+
+      .main__mockbtn--cta{ display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px;
+        background-color: rgb(68, 71, 75) ;
+        color: antiquewhite;
+        border-color: black;
+        padding: 1rem 2rem;
+        flex-wrap: wrap; 
+      }
+
+      .bold{ font-style: bold;}
+    
+      .fuente35{font-size: 20px; font-weight:300 }
+    
+      .fuente20{font-size:15px; font-weight:300 ;}
+    
+      .fuente23{font-size: 23px;; }
+
+      .fuente30{ font-size: 30px; font-weight: 500;}
+
+      .fuente40{ font-size: 35px; font-weight: 500;}
+
+      .textColorGray{ color: rgb(27, 25, 25);}
+
+      .textColorWite { color: antiquewhite;}
+
+
+          /*Footer*/
+
+
+  footer {text-decoration: none; color: antiquewhite; background-color:rgb(27, 25, 25) ;
+    bottom: 0; width: 100%; grid-area: footer; padding-top: 5px;padding-bottom: 5px; }
+  
+  .footer__contenido{display: flex; text-align: center;}
+                
+
+  
+
+  .footer__redes{text-align: end; display: inline;}
+
+  .footer__text {display:flex;
+    align-items: center;
+    justify-content: space-around;; text-decoration: none; color: antiquewhite;
+  }
+
+
+  a {text-decoration: none; color: antiquewhite;}
+
+
+        /*Registro*/
+
+  .body__registro {display: grid; grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto;}
+
+  .fieldset__registro{ display: flex; justify-content: center; margin: 2rem; flex-direction: column; }
+  
+  .fieldset__datos {display: flex;
+  justify-content: center; flex-direction: column; margin: 2rem ; padding: 1rem;}
+
+  .main__registro{display: flex; justify-content: center;  flex-direction: column; align-items: center; flex-wrap: wrap;}
+
+  .main__datos--margen{ margin-top: 5px;}
+
+  .btn__registro{display: flex; justify-content: center;
+                margin: 10px}
+
+  .form__registro{ display: flex; flex-direction: column;
+                align-items: flex-start;}
+
+  .legend__registro {display: flex; justify-content: center; 
+    flex-direction: column;align-items: center; margin: 2rem 1rem ;}
+
+  .seccion__registro{
+    display: flex; flex-direction: column; margin:5px; align-items: center;
+  }
+  .leyendDatos{font-weight: bold;text-align: center; }
+
+        /*Convocatorias*/
+
+
+.convTitulo{display: flex; 
+  justify-content: center; 
+  margin: 3rem;}
+
+.mainConv {display: flex;
+        flex-direction: column; 
+        align-items: center; margin-bottom: 1rem;}
+
+.fieldsetConv{display: flex; 
+  align-items:flex-start; flex-direction: row-reverse; 
+  margin-left: 4rem; margin-right: 4rem; flex-direction: column; flex-basis: 50%;}
+
+.fieldsetText {display: flex; 
+              flex-direction: row-reverse;
+              align-items: center; }
+    /* ARCHIVO */
+
+.main__contenido {display: grid;
+place-items: center;
+grid-template-rows: 2fr ; row-gap: 15px; margin: 3rem
+;}
+
+.main__section--lista{ display: grid; border: solid 1px rgb(27, 25, 25) ;row-gap: 1rem;}
+
+.main__section--distribucion {
+  display: grid; grid-template-columns: auto 1fr;
+}
+
+.archivo {text-decoration: none; color: rgb(27, 25, 25);}
+      /*--- Contacto--*/
+
+.main__contacto--margin{display: grid; grid-template-rows: auto; row-gap: 1rem;place-items: center; padding-top: 10vh;}
+
+.main__contacto--titulo{ margin-bottom: 2rem;}
+
+.main__contacto--form{ display: flex; flex-direction: column; flex-wrap: wrap;}
+
+.main__form--asunto{margin-bottom: 1rem; margin-top: 1rem;}
+
+.cuadroTxt{ width: 70vw;}
+
+      /*Libertador*/
+
+
+.main__libertador--posicion{ padding: 5rem;
+display: grid; row-gap: 1rem;}
+
+.LibertadoresTitulo {font-weight: 700; text-align: start;}
+
+
+/** Medias**/
+
+
+@media screen and (max-width: 380px) {
+
+  body{size: auto ;}
+
+  h1 {text-align: center;}
+
+  .nav__topbar__btn{font-size: 20px;}
+
+  .header__responsive{width: auto
+    ; height: 70%;}
+  
+  .header__responsive--logo{transform: scale(0.7)}
+    
+  .main__padding{
+      padding: 2rem 2rem 1rem ;
+    }
+    .main__mockbtn--cta{text-align: center; padding: 4px 3px; font-size: 20px;}
+    .main__descripcion{
+    font-size: 18px;
+  }
+  .footer {
+    font-size: 7px; padding: 5px;
+  }
+  .footer__text{ display: grid; grid-template-rows: auto; text-align: center;}
+  
+  .footer__list { display:flex;}
+
+  .footer__redes{margin: 2px;}
+
+  footer p { display: none; }
+
+  /* Registro */ 
+
+  .fieldset__registro{ border: none; width: auto;}
+
+  .fieldset__datos {border: none;width: auto}
+
+  .main__registro{ font-size: 15px; width: 100%;}
+
+  .LeyendMain {font-size: 25px;}
+
+  .leyendDatos{text-align: center;}
+  
+  
+  .nav__topbar--ulNoIndex{ display: none;}
+
+  .nav__topbar--noIndex{justify-content: space-around;}
+
+  .convTitulo{ font-size: 35px; margin: 2rem;}
+  .fieldsetConv{ margin: auto;}
+
+  .main__libertador--posicion { padding: 15px; align-items: center;}
+
+  .LibertadoresTitulo { font-size: 15px;}
+
+  .cuadroTxt{ display: flex; flex-wrap: wrap; width: 70vw;}
+  
+  .descripcionContacto {font-size: 15px; text-align: center;}
+
+  }
+
+
+@media screen and (max-width: 480px) {
+  .header__responsive--logo{transform: scale(0.7)}
+
+  p {text-align: center}
+  
+  h1 { text-align: center;}
+
+  .nav__topbar--ulNoIndex{display: none;}
+
+  .cuadroTxt{ display: flex; flex-wrap: wrap; width: 70vw;}
+  
+}
