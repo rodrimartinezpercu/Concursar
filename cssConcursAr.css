@@ -5,11 +5,12 @@ padding: 0;
 box-sizing: border-box;}
 
     body {font-family: 'League Spartan', sans-serif;   margin: 0%
-      ; background-color:#ffffb7; display: grid;
+      ; background: rgb(255,255,183);
+      background: radial-gradient(circle, rgba(255,255,183,1) 52%, rgba(221,221,141,1) 86%); display: grid;
     grid-template-rows: auto 1fr auto;grid-template-areas: 
     "header"
     "main"
-    "footer";
+    "footer"; 
   }
     
       nav{color: rgb(43, 41, 41);}
@@ -37,8 +38,13 @@ box-sizing: border-box;}
         padding: 10px;
         background-color: rgb(68, 71, 75);
         border-radius: 8%; border-color: black; border: solid; margin-bottom: 0px;
-        position: relative; flex-shrink: auto
-      ;}
+        position: relative; flex-shrink: auto 
+      ; transition: 50ms;}
+
+      .nav__topbar--listnoIndex:hover{
+        transform: scale( 110% ); z-index: 1; transform: translateY(5px);
+
+      }
 
       .logobtn{ width: 150px; height: 75px;}
 
@@ -57,7 +63,7 @@ box-sizing: border-box;}
         .header__responsive--logo{
           display:grid;
           align-items: center
-          ; width: 100%;}
+          ; width: 100%; animation-name: scale-down-center; }
 
 
 
@@ -68,7 +74,12 @@ box-sizing: border-box;}
                         background-color: rgb(68, 71, 75);
                         border-radius: 8%;
                         bottom: 24px; border-color: black; border: solid; margin-bottom: 0px;
-                        position: relative; bottom:24px ;}
+                        position: relative; bottom:24px ;
+                      transition: 50ms;}
+      .header__nav__list:hover{
+        transform: scale( 110% ); z-index: 1;
+      }
+              
       .header__nav__a{text-decoration: none;color: antiquewhite;}   
 
       .header__fotologo{ width: 100%;
@@ -179,11 +190,14 @@ box-sizing: border-box;}
 
 .fieldsetConv{display: flex; 
   align-items:flex-start; flex-direction: row-reverse; 
-  margin-left: 4rem; margin-right: 4rem; flex-direction: column; flex-basis: 50%;}
+  margin-left: 4rem; margin-right: 4rem; flex-direction: column; flex-basis: 50%;transition: 50ms;}
+
+.fieldsetConv:hover{ transform: scale(110%);}
 
 .fieldsetText {display: flex; 
               flex-direction: row-reverse;
               align-items: center; }
+
     /* ARCHIVO */
 
 .main__contenido {display: grid;
@@ -217,6 +231,34 @@ grid-template-rows: 2fr ; row-gap: 15px; margin: 3rem
 display: grid; row-gap: 1rem;}
 
 .LibertadoresTitulo {font-weight: 700; text-align: start;}
+
+/** Animaciones**/
+
+.scale-down-center {
+	-webkit-animation: scale-down-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 
 
 /** Medias**/
