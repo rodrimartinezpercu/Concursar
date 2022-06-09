@@ -23,6 +23,7 @@ box-sizing: border-box;}
 
       /* CAMBIAR ESE HGHT QUE ME VA A COMPLICAR PARA OTROS DISPOSITIVOS*/
 
+      footer ul {padding-left: -2rem;}
 
       .nav__topbar{ display: flex;font-size: 20px; justify-content: space-between; width: 100%; height: 50px; align-items: center ;}
 
@@ -35,11 +36,11 @@ box-sizing: border-box;}
       .nav__topbar--ulNoIndex{ display: flex; justify-content: center; flex-basis: auto;align-items: baseline;}
 
       .nav__topbar--listnoIndex { display: flex;
-        padding: 10px;
+        padding: 5px;
         background-color: rgb(68, 71, 75);
-        border-radius: 8%; border-color: black; border: solid; margin-bottom: 0px;
+        border-radius: 8%; border-color: black; border: solid; 
         position: relative; flex-shrink: auto 
-      ; transition: 50ms;}
+      ; transition: 50ms; margin-bottom: -1rem;}
 
       .nav__topbar--listnoIndex:hover{
         transform: scale( 110% ); z-index: 1; transform: translateY(5px);
@@ -270,6 +271,8 @@ display: grid; row-gap: 1rem;}
 
   h1 {text-align: center;}
 
+  ul{padding-left: -2rem;}
+
   .nav__topbar__btn{font-size: 20px;}
 
   .header__responsive{width: auto
@@ -336,5 +339,7 @@ display: grid; row-gap: 1rem;}
   .nav__topbar--ulNoIndex{display: none;}
 
   .cuadroTxt{ display: flex; flex-wrap: wrap; width: 70vw;}
+
+  ul{padding-left: -2rem;}
   
 }
