@@ -50,7 +50,7 @@ box-sizing: border-box;}
 
 
       .header__responsive{ display: grid; place-items: center;
-        background-image: url(./assets/OrquestaPng.png);
+        background-image: url(/assets/OrquestaPng.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom
